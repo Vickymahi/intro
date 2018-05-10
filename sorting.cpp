@@ -1,14 +1,38 @@
-Insertion Sort
-
-Sorting is the process of arranging a list of elements in a particular order (Ascending or Descending).
-
-Insertion sort algorithm arranges a list of elements in a particular order. In insertion sort algorithm, every iteration moves an element from unsorted portion to sorted portion until all the elements are sorted in the list.
-
-Step by Step Process
-
-The insertion sort algorithm is performed using following steps...
-
-Step 1: Asume that first element in the list is in sorted portion of the list and remaining all elements are in unsorted portion.
-Step 2: Consider first element from the unsorted list and insert that element into the sorted list in order specified.
-Step 3: Repeat the above process until all the elements from the unsorted list are moved into the sorted list.
-Sorting Logic
+#include<iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int i,j,n,temp,a[30];
+    cout<<"Enter the number of elements:";
+    cin>>n;
+    cout<<"\nEnter the elements\n";
+ 
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+ 
+    for(i=1;i<=n-1;i++)
+    {
+        temp=a[i];
+        j=i-1;
+ 
+        while((temp<a[j])&&(j>=0))
+        {
+            a[j+1]=a[j];    //moves element forward
+            j=j-1;
+        }
+ 
+        a[j+1]=temp;    //insert element in proper place
+    }
+ 
+    cout<<"\nSorted list is as follows\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+ 
+    return 0;
+}
