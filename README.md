@@ -10,7 +10,7 @@ and the programming languages i know are
   * JAVA
   * HTML
   * C
-  * ~~JAVASCRIPT~~(SRY,I STILL HAVEN'T COMPLETED LEARNING JAVASCRIPT)
+  * ~~JAVASCRIPT~~(sry,i haven't learned it completely)
 
 
 
